@@ -30,7 +30,7 @@ Edit only the style.css file to complete this assignment. Do not change anything
 
 ## A few things that could help you
 
-- Use #ef5350 as the background colour and #386bb as the colour for the nav
+- Use #ef5350 as the background colour and #386bbb as the colour for the nav
 - Use media screen attributes to make the site responsive.
 - The subtitle in each card must have the colour #757575
 - Must style in mobile first format  (Try reading more on what this is)
