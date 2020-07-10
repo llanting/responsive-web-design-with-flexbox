@@ -1,17 +1,28 @@
 body {
   font-family: rubik;
+  background-color: #ef5350;
+  padding-inline-start: 0;
 }
 
 .navbar {
   /*add styles for the navbar here*/
+  background-color: #386bbb;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .hamburger {
   /*add styles for the hamburger here*/  
+  padding: 5px 15px 5px 0px;
+
 }
 
 .container {
   /*add styles for the container here*/
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -22,23 +33,33 @@ h1 {
 
 #pokedex {
   /*add styles for pokedex here*/
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-inline-start: 0;
 }
 
 .card {
   padding: 5px;
   background-color: #fff;
   color: #222;
-  margin:10px;
+  margin: 10px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-title {
   font-size: 32px;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .card-subtitle {
   margin-top: 5px;
   font-weight: lighter;
+  color: #757575;
 }
 
 .card-image {
@@ -47,22 +68,92 @@ h1 {
 
 .menu {
   /*add styles for the menu here*/
-}
+  list-style: none;
+  display: none;
 
+}
 
 header {
   /*add styles for the header here*/
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .headerImg {
   /*add styles for the header image here*/
+  width: 250px;
 }
 
 .social {
   /*add styles for the social icons here*/
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  width: 250px;
+  padding-inline-start: 0;
 }
+
 
 footer {
   /*add styles for the footer here*/
+  display: flex;
+  justify-content: center;
 }
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    #pokedex {
+      /*add styles for pokedex here*/
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-inline-start: 0;
+    }
+
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    .menu {
+      /*add styles for the menu here*/
+      list-style: none;
+      display: block;
+    
+    }
+
+    #pokedex {
+      /*add styles for pokedex here*/
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-inline-start: 0px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 300px;
+    }
+
+    .menu li {
+      padding: 0px 10px 0px 10px;
+      font-size: 18px;
+    }
+}
